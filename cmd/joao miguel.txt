@@ -1,0 +1,13 @@
+1- md projeto inicial; cd projeto inicial; md html, css, js, assets
+2- cd html; css; js; assets
+3- cd html, depois echo Bem-vindo ao Projeto Inicial > index.html; cd css, depois echo body { font-family: Arial, sans-serif; background-color: beige} > style.css
+4- cd assets, md img e md fonts
+5- move style.css ..\assets
+6- tree /f
+7- cd js, depois echo console.log("Script carregado!") > script.js ;
+echo console.log("Aplicação Iniciada!") > app.js
+8- copy index.html ..\assets
+9- rename app.js main.js
+10- tree /f
+11- cd assets; del index.html
+12- cd html; notepad index.html

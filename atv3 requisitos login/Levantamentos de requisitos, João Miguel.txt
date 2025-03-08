@@ -1,0 +1,15 @@
+REQUISITOS FUNCIONAIS:
+ - No cadastro o sistema deve solicitar uma informação pessoal única, como gmail ou telefone, e uma senha que servirá para login futuramente.
+ - Ainda no cadastro tópicos como gênero, idade, entre outras informações devem ser selecionadas para fácil gerenciamento dos usuários.
+ - Na interface de login inserir apenas o gmail/telefone e senha, e o sistema entra em seu usuário que possui mais filtros.
+ - Para recuperação da senha o sistema envia um código na informação utilizada (gmail ou telefone).
+
+
+REQUISISTOS NÃO FUNCIONAIS:
+ - Proteção dos dados pessoais dos usuários.
+ - Sistema intuitivo.
+ - Acessibilidade.
+
+REGRAS DE NEGÓCIO:
+ - Mínimo de caracteres na criação da senha.
+ - Para o cadastro apenas gmail ou telefone.

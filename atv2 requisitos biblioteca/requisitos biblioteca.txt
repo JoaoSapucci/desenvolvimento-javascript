@@ -1,0 +1,3 @@
+- Desenvolver um sistema ágil para melhor consulta dos livros disponíveis.
+- Desenvolvimento de um sistema com layout simples para maior acessibilidade dos alunos, independente da faixa etária.
+- Criar uma forma de contato com os leitores para dar suporte, também ajudando a cumprir prazos de devolução. 
