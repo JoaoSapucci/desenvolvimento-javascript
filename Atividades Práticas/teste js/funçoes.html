@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Funções</title>
+</head>
+<body>
+    <h1>Exemplos de Funções</h1>
+
+    <script>
+        function saudaçao(){
+            console.log("Olá Mundo!")
+        }
+
+        saudaçao()
+
+        function saudaçaoComArg(nome){
+            console.log("Olá Mundo! Eu sou " + nome)
+        }
+
+        saudaçaoComArg("Lucas")
+        saudaçaoComArg("Joao")
+        
+        function saudaçaoComArgOpcional(nome, saudaçao = "Olá"){
+            console.log(saudaçao + ", " + nome)
+        }
+
+        saudaçaoComArgOpcional("Lucas")
+        saudaçaoComArgOpcional("joao", "Oi")
+
+        function somar(num1, num2){
+            console.log(num1 + num2)
+        }
+        somar(5,2)
+        somar(3,5)
+
+        function somarRetorno(num1, num2){
+            return(num1 + num2)
+        }
+        var soma = somarRetorno(5,2)
+        console.log(soma)
+
+        function media(nota1, nota2, nota3){
+            return((nota1+nota2+nota3)/3)
+        }
+        console.log(media(10,10,10))
+        
+        var n = media(10,10,10)
+        if(n > 7){
+            console.log("passou")
+        } else {
+            console.log("reprovado")
+        }
+        
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
