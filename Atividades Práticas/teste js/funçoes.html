@@ -52,6 +52,20 @@
         } else {
             console.log("reprovado")
         }
+
+        //nota >= 7 e as faltas <= 4
+        function verificarAprovaçao(n1, n2, n3, numFaltas){
+            var media = (n1+n2+n3)/3
+            if (media >= 7 && numFaltas <= 4){
+                return "Aprovado"
+            } else {
+                return "Reprovado"
+            }
+        }
+
+        console.log("Situaçao ", verificarAprovaçao(10,8,5,3))
+        console.log("Situaçao ", verificarAprovaçao(10,8,5,5))
+
         
 
 
