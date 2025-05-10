@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo DOM</title>
+</head>
+<body>
+    
+    <h1 id="titulo">Olá DOM</h1>
+    <h1 class="titulo">Olá DOM</h1>
+    <button onclick="mudarTexto()">Alterar Texto</button>
+
+    <h3>lista de Itens</h3>
+    <ul id="lista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <input type="text" name="novoItem" id="novoItem">
+    <button onclick="addItem()">Inserir Item</button>
+    <button onclick="removeUltimoItem()">Remover ultimo Item</button>
+
+    <h3>Alterar cor de fundo</h3>
+    <button onclick="mudaCorFundo('lightpink')">Rosa claro</button>
+    <button onclick="mudaCorFundo('beige')">Bege</button>
+    <button onclick="mudaCorFundo('lightgray')">Cinza claro</button>
+
+
+
+
+
+    <script>
+
+        function mudarTexto(){
+            document.getElementById("titulo").textContent = "Texto Alterado por ID";
+            document.getElementsByClassName("titulo")[0].textContent = "Texto Alterado por Classe";
+        }
+
+        function addItem(){
+            var text = document.getElementById("novoItem").value
+            if(text.trim() != ""){
+                var li = document.createElement("li")
+                li.textContent = text.trim()
+                document.getElementById("lista").appendChild(li)
+                document.getElementById("novoItem").value = "";
+        } else {
+            alert("Digite um texto para inserir")
+        }  
+        }
+
+        function removeUltimoItem(){
+            var lista = document.getElementById("lista")
+            if(lista.lastElementChild){
+                lista.removeChild(lista.lastElementChild)
+            } else {
+                alert("Não existe itens para serem removidos")
+            }
+
+            
+        }
+        
+        function mudaCorFundo(cor){
+            document.body.style.backgroundColor = cor
+
+        }
+
+
+    </script>
+
+</body>
+</html>
